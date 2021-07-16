@@ -38,6 +38,13 @@ html {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity .5s ease-in-out .5s;
+}
+
+.nav-link:hover {
+    opacity: .6;
 }
 
 .nav-link__text {
@@ -170,6 +177,16 @@ html {
     font-size: 30px;
     line-height: 36px;
     color: #FF5831;
+}
+
+.meditation-link {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity .5s ease-in-out .5s;
+}
+
+.meditation-link:hover {
+    opacity: .6;
 }
 
 .projects__info_skills {
