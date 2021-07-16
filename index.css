@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .page {
     background-color: #E5E5E5;
     font-family: Inter, Arial;
@@ -8,6 +12,7 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;*/
     text-rendering: optimizeLegibility;
+    margin: auto;
 }
 
 .main {
@@ -33,6 +38,11 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
+}
+
+.nav-link__text {
+    text-decoration: none;
+    color: black;
 }
 
 .home {
@@ -95,7 +105,7 @@
 }
 
 .section-title {
-    margin: auto;
+    margin: 0 auto 83px;
     text-align: center;
     font-size: 48px;
     line-height: 58px;
@@ -132,10 +142,11 @@
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
-    margin: 83px auto 110px;
+    padding: 0;
+    margin: 0 auto 110px;
 }
 
-.skill__image {
+.skills__image {
     max-width: 125px;
     height: 125px;
     object-fit: cover;
@@ -148,6 +159,10 @@
 .projects__container {
     display: flex;
     flex-direction: row;
+}
+
+.projects__info {
+    margin-right: 56px;
 }
 
 .projects__info_title {
@@ -177,7 +192,7 @@
     opacity: 1;
 }
 
-.project__image {
+.projects__image {
     max-width: 611px;
     max-height: 329px;
     margin: auto;
@@ -190,4 +205,69 @@
 
 .text_type_footer {
     text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .home {
+        padding-top: 50px;
+    }
+
+    .projects__container {
+        flex-direction: column;
+    }
+
+    .projects__info {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-link {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .home__lower-container {
+        flex-direction: column;
+    }
+
+    .about__container {
+        flex-direction: column;
+    }
+
+    .projects__image {
+        max-width: 82vw;
+    }
+
+    .projects__info_text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .hoome__image {
+        max-width: 250px;
+    }
+
+    .about__image {
+        max-width: 180px;
+    }
+
+    .skills__image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .skills__image {
+        width: 50px;
+        height: 50px;
+    }
 }

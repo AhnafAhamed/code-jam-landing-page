@@ -6,22 +6,23 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elise Bouer</title>
 </head>
 
 <body class="page">
     <header class="header">
         <nav>
             <ul class="navigation">
-                <li class="nav-link">Home</li>
-                <li class="nav-link">About</li>
-                <li class="nav-link">Skills</li>
-                <li class="nav-link">Projects</li>
-                <li class="nav-link">Contact</li>
+                <li class="nav-link"><a href="#home" class="nav-link__text">Home</a></li>
+                <li class="nav-link"><a href="#about" class="nav-link__text">About</a></li>
+                <li class="nav-link"><a href="#skills" class="nav-link__text">Skills</a></li>
+                <li class="nav-link"><a href="#projects" class="nav-link__text">Projects</a></li>
+                <li class="nav-link"><a href="#contact" class="nav-link__text">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <section class="home">
+        <section class="home" id="home">
             <article>
                 <p class="text">Hey there! I'm</p>
                 <h1 class="home__name">Elise Bouer</h1>
@@ -43,7 +44,7 @@
             </article>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <h2 class="section-title">About Me</h2>
             <div class="about__container">
                 <div class="about__text-container">
@@ -62,18 +63,18 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="section-title">Skills</h2>
             <ul class="skills__list">
-                <li class="skills__list_item"><img class="skill__image" src="./images/html.png"></li>
-                <li class="skills__list_item"><img class="skill__image" src="./images/css3.png"></li>
-                <li class="skills__list_item"><img class="skill__image" src="./images/javascript.png"></li>
-                <li class="skills__list_item"><img class="skill__image" src="./images/react.png"></li>
-                <li class="skills__list_item"><img class="skill__image" src="./images/Vector (4).png"></li>
+                <li class="skills__list_item"><img class="skills__image" src="./images/html.png"></li>
+                <li class="skills__list_item"><img class="skills__image" src="./images/css3.png"></li>
+                <li class="skills__list_item"><img class="skills__image" src="./images/javascript.png"></li>
+                <li class="skills__list_item"><img class="skills__image" src="./images/react.png"></li>
+                <li class="skills__list_item"><img class="skills__image" src="./images/Vector (4).png"></li>
             </ul>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="section-title">Projects</h2>
             <div class="projects__container">
                 <div class="projects__info">
@@ -99,11 +100,11 @@
                         </li>
                     </ul>
                 </div>
-                <img class="project__image" src="./images/Main 1.png">
+                <img class="projects__image" src="./images/Main 1.png">
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="section-title">Contact</h2>
             <p class="text">E-mail:<b>hi@elise.dev</b></p>
             <p class="text">Mobile:<b>+940768988698</b></p>
