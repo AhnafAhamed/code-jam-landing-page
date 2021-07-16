@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<main class="page">
+
+<body class="page">
     <header class="header">
         <nav>
             <ul class="navigation">
@@ -19,68 +20,87 @@
             </ul>
         </nav>
     </header>
-    <section class="home">
-        <article>
-            <p class="home__text">Hey there! I'm</p>
-            <h1 class="home__name">Elise Bouer</h1>
-            <p class="home__text"><span class="home__text_type_underline">Freelance Web-Developer</span> who specializes in the MERN stack. I build
-                scalabale web apps for small to medium size businesses. I also mentor other aspiring developers and
-                organize tech events & meetups at the local community center.</p>
-            <div class="home__lower-container">
-                <p class="home__text">My passion is to create beautiful web experiences for my clients with the
-                    knowledge and experience I
-                    have. Feel free to contact me to build your web apps that could change the way you do business.</p>
-                <img class="home__image" alt="home-image">
-                <button type="button" class="home__button">Contact Me</button>
+    <main class="main">
+        <section class="section section_home">
+            <article>
+                <p class="text">Hey there! I'm</p>
+                <h1 class="home__name">Elise Bouer</h1>
+                <p class="text"><span class="text_type_underline">Freelance Web-Developer</span> who specializes
+                    in the MERN stack. I build
+                    scalabale web apps for small to medium size businesses. I also mentor other aspiring developers and
+                    organize tech events & meetups at the local community center.</p>
+                <div class="home__lower-container">
+                    <div class="home__lower-container_text">
+                        <p class="text">My passion is to create beautiful web experiences for my clients with the
+                            knowledge and experience I
+                            have. Feel free to contact me to build your web apps that could change the way you do
+                            business.
+                        </p>
+                        <button type="button" class="home__button">Contact Me</button>
+                    </div>
+                    <img class="home__image" src="./images/couch-img.png" alt="home-image">
+                </div>
+            </article>
+        </section>
+
+        <section class="section section_about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container">
+                <div class="about__text-container">
+                    <p class="text">I’m Elise Bouer from New Orleans, Louisiania. I’m one of the early Practicum
+                        graduates.
+                        I like to mentor other aspiring developers and organizing tech events & meetups at the local
+                        community center. Before joining Practicum, I was an elementary school teacher.</p>
+                    <p class="text">I sold my small startup to a tech giant and I’m now able to have a laid-back
+                        lifestyle
+                        as a freelancer, which doesn't mean I’m not actively growing as a professional.</p>
+                    <p class="text">If I’m not working you can find me doing any of these activties, hiking, camping,
+                        skiing, reading, watching mukbang or cooking tutorials or playing video games. I also love to
+                        experiment with Arduino synthesizers on my free time.</p>
+                </div>
+                <img class="about__image" src="./images/5.png" alt="about-image">
             </div>
-        </article>
-    </section>
+        </section>
 
-    <section class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about__container">
-            <div class="about__text-container"></div>
-            <img class="about__image" alt="about-image">
-        </div>
-    </section>
-
-    <section class="skills">
-        <h2 class="section-title">Skills</h2>
-        <ul class="skills__list">
-            <li class="skills__list_item"><img></li>
-            <li class="skills__list_item"><img></li>
-            <li class="skills__list_item"><img></li>
-            <li class="skills__list_item"><img></li>
-            <li class="skills__list_item"><img></li>
-        </ul>
-    </section>
-
-    <section class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects__info">
-            <h3 class="projects__info_title">Guided Meditaion App</h3>
-            <p class="projects__info_text">Guided Meditation App is a web app featuring six guided meditaions focusing
-                on various aspects of a persons mental health. A user can listen to a guided meditaion of their choice
-                and a timer will gong when the session ends.</p>
-            <ul class="projects__info_skills">
-                <li class="projects__info_skill"><img></li>
-                <li class="projects__info_skill"><img></li>
-                <li class="projects__info_skill"><img></li>
-                <li class="projects__info_skill"><img></li>
+        <section class="section section_skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__list_item"><img></li>
+                <li class="skills__list_item"><img></li>
+                <li class="skills__list_item"><img></li>
+                <li class="skills__list_item"><img></li>
+                <li class="skills__list_item"><img></li>
             </ul>
-        </div>
-        <img class="project__image">
-    </section>
+        </section>
 
-    <section class="contact">
-        <h2 class="section-title">Contact</h2>
-        <p class="contact__info">E-mail:<b>hi@elise.dev</b></p>
-        <p class="contact__info">Mobile:<b>+940768988698</b></p>
-    </section>
+        <section class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects__info">
+                <h3 class="projects__info_title">Guided Meditaion App</h3>
+                <p class="projects__info_text">Guided Meditation App is a web app featuring six guided meditaions
+                    focusing
+                    on various aspects of a persons mental health. A user can listen to a guided meditaion of their
+                    choice
+                    and a timer will gong when the session ends.</p>
+                <ul class="projects__info_skills">
+                    <li class="projects__info_skill"><img></li>
+                    <li class="projects__info_skill"><img></li>
+                    <li class="projects__info_skill"><img></li>
+                    <li class="projects__info_skill"><img></li>
+                </ul>
+            </div>
+            <img class="project__image">
+        </section>
 
-    <body></body>
+        <section class="contact">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact__info">E-mail:<b>hi@elise.dev</b></p>
+            <p class="contact__info">Mobile:<b>+940768988698</b></p>
+        </section>
+    </main>
+
     <footer class="footer">
     </footer>
-</main>
+</body>
 
 </html>
