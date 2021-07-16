@@ -85,6 +85,8 @@
     font-size: 24px;
     line-height: 29px;
     opacity: 1;
+    cursor: pointer;
+    border: none;
     transition: opacity .5s ease-in-out .5s;
 }
 
@@ -125,4 +127,67 @@
     margin: auto;
 }
 
-.
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 83px auto 110px;
+}
+
+.skill__image {
+    max-width: 125px;
+    height: 125px;
+    object-fit: cover;
+}
+
+.projects {
+    padding-bottom: 96px;
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects__info_title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FF5831;
+}
+
+.projects__info_skills {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 32px);
+    grid-gap: 35px;
+    list-style-type: none;
+    margin: 0 auto 0;
+    padding: 0;
+    position: relative;
+}
+
+.projects__info_text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    background-image: url("./images/Rectangle\ 6.png");
+    opacity: 1;
+}
+
+.project__image {
+    max-width: 611px;
+    max-height: 329px;
+    margin: auto;
+}
+
+.footer {
+    align-items: center;
+    border-top: 1px solid #000000;;
+}
+
+.text_type_footer {
+    text-align: center;
+}
